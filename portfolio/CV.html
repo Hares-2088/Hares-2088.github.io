@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Adem's portfolio semester 1">
+    <meta name="keywords" content="portfolio, champlain college-st-lambert, CV, Adem, Bessam, Adem Bessam">
+
+    <title>CV</title>
+    <link href="images/personal-information-icon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="portfolio-CSS.css">
+
+    <style>
+      #position{
+        display: flex;
+      }
+      main{
+        flex:5;
+        margin-right: 80px;
+      }
+      aside{
+        flex:5;
+      }
+      /*---------- table ---------*/
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td, th {
+        border: 2px solid rgb(2, 4, 122);
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(58, 133, 246);
+      }
+      tr:nth-child(odd) {
+        background-color: rgba(147, 189, 251, 0.462);
+      }
+      /*------------- Form -------*/
+      input[type=text],[type=email],[type=tel], textarea {
+        width: 100%; 
+        padding: 12px;  
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical; 
+      }
+      input[type=submit] {
+        background-color: rgb(2, 4, 122);
+        color:white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: rgb(58, 133, 246);
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+      <h1>CV</h1>
+    </header>  
+
+    <nav>
+        <a href="preference.html"><img class="left_Arrow" src="images/go-back-2Small.jpeg" alt="go back"></a>
+        <a href="profile.html"><img class="rignt_Arrow" src="images/goNextPageSmall.jpeg" alt="go next"></a>
+
+        <div style="text-align:center;">
+            <a href="profile.html" class="links">Profile</a>
+            <a href="MyHobbies.html" class="links">Hobbies</a> 
+            <a href="ComputerScience.html" class="links">Computer-Science</a> 
+            <a href="description.html" class="links">Description</a>
+            <a href="Experience.html" class="links">Previous work</a>
+            <a href="preference.html" class="links">Preference</a>
+        </div>
+    
+    </nav>
+
+    <div id="position">
+      <main>
+        <h2 class="description">Professional experience:</h2>
+
+          <table id="GM-NTech">
+              <caption>GM-NTech</caption>
+              <tr>
+                <th>Tasks</th>
+                <th>Skills developed</th> 
+                <th>Preference Rate</th> 
+              </tr>
+
+              <tr>
+                <td>Test the links</td> 
+                <td>Patience</td>
+                <td>4/5</td>
+              </tr>
+
+              <tr>
+                <td>Test the features</td> 
+                <td>Maintenance understanding</td>
+                <td>3/5</td>
+              </tr>
+
+              <tr>
+                <td>Translate</td> 
+                <td>Increase my vocabulary</td>
+                <td>4/5</td>
+              </tr>
+            </table>
+
+            <table id="MEC" style="margin-top:50px;">
+              <caption>MEC</caption>
+              <tr>
+                <th>Tasks</th>
+                <th>Skills developed</th> 
+                <th>Preference Rate</th> 
+              </tr>
+
+              <tr>
+                <td>Cashier</td> 
+                <td>Patience/calmness</td>
+                <td>4/5</td>
+              </tr>
+
+              <tr>
+                <td>Stock inventory</td> 
+                <td>Stock understanding</td>
+                <td>2/5</td>
+              </tr>
+
+              <tr>
+                <td>Adviser</td> 
+                <td>Outdoor equipement knowledge</td>
+                <td>5/5</td>
+              </tr>
+            </table>
+      </main>
+
+      <aside>
+        <h2 class="description">Contact me:</h2>
+        <form action="Contact">
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Separate each email address with a comma" multiple required>
+
+          <label for="tel">Telephone number:</label>
+          <input type="tel" id="tel" name="tel" placeholder="000-000-0000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+      
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" placeholder="Write your comment.." style="height:200px" required></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </aside>
+    </div>
+
+</body>
+
+</html>
